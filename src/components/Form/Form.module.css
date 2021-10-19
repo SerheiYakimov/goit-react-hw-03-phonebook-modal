@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 250px;
+  color: rgb(226, 100, 27);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.input:focus {
+  outline-color: rgb(235, 169, 69);
+}
+
+.button {
+  width: 100px;
+  height: 20px;
+  color: darkgoldenrod;
+  background-color: cornsilk;
+  border: 1px solid rgba(75, 67, 67, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
