@@ -16,6 +16,23 @@ class App extends Component {
     filter: "",
   };
 
+  componentDidMount() {
+    const contacts = localStorage.getItem('contacts');
+    const parsedContacts = JSON.parse(contacts);
+    
+    if (parsedContacts) {
+      this.setState({ contacts: parsedContacts });
+    }   
+  };
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+     localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  };
+  
+
+
   addNewContact = (contact) => {
     if (this.state.contacts.find((el) => el.name === contact.name)) {
       alert(`${contact.name} is already in contacts`);
