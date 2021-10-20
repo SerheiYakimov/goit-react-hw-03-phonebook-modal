@@ -4,6 +4,7 @@ import "./App.css";
 import { Form } from "./components/Form/Form";
 import { Filter } from "./components/Filter/Filter";
 import { ContactList } from "./components/ContactList/ContactList";
+import Modal from "./components/Modal/Modal"
 
 class App extends Component {
   state = {
@@ -14,6 +15,7 @@ class App extends Component {
       { id: "id-4", name: "Annie Copeland", number: "227-91-26" },
     ],
     filter: "",
+    showModal: false,
   };
 
   componentDidMount() {
@@ -30,6 +32,13 @@ class App extends Component {
      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }
   };
+
+  toggleModal = () => {
+    this.setState(({ showModal }) => ({
+      showModal: !showModal,
+    }))
+  };
+  
   
 
 
@@ -69,14 +78,19 @@ class App extends Component {
   };
 
   render() {
-    const { filter } = this.state;
+    const { filter, showModal } = this.state;
     const { addNewContact, handleFilter, findContact, deleteContact } = this;
 
     return (
       <div className="App">
         <div className="container">
+          {showModal && <Modal onClose={this.toggleModal}>
+            <Form addNewContact={addNewContact} />
+            <button type="button" onClick={this.toggleModal}>close</button>
+          </Modal>}
           <h2 className="title">Phonebook</h2>
-          <Form addNewContact={addNewContact} />
+          <button type="button" onClick={this.toggleModal}>to add</button>
+          
           <div>
             <h2 className="title">Contacts</h2>
             <Filter value={filter} onChange={handleFilter} />
