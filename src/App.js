@@ -86,10 +86,10 @@ class App extends Component {
         <div className="container">
           {showModal && <Modal onClose={this.toggleModal}>
             <Form addNewContact={addNewContact} />
-            <button type="button" onClick={this.toggleModal}>close</button>
+            <button className="button" type="button" onClick={this.toggleModal}>close</button>
           </Modal>}
           <h2 className="title">Phonebook</h2>
-          <button type="button" onClick={this.toggleModal}>to add</button>
+          <button className="button" type="button" onClick={this.toggleModal}>to add</button>
           
           <div>
             <h2 className="title">Contacts</h2>

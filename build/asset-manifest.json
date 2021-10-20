@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-03-phonebook-modal/static/css/main.7b18a000.chunk.css",
-    "main.js": "/goit-react-hw-03-phonebook-modal/static/js/main.53e3d874.chunk.js",
-    "main.js.map": "/goit-react-hw-03-phonebook-modal/static/js/main.53e3d874.chunk.js.map",
+    "main.css": "/goit-react-hw-03-phonebook-modal/static/css/main.4b514f15.chunk.css",
+    "main.js": "/goit-react-hw-03-phonebook-modal/static/js/main.ece350af.chunk.js",
+    "main.js.map": "/goit-react-hw-03-phonebook-modal/static/js/main.ece350af.chunk.js.map",
     "runtime-main.js": "/goit-react-hw-03-phonebook-modal/static/js/runtime-main.a0dbe663.js",
     "runtime-main.js.map": "/goit-react-hw-03-phonebook-modal/static/js/runtime-main.a0dbe663.js.map",
-    "static/js/2.f41417e7.chunk.js": "/goit-react-hw-03-phonebook-modal/static/js/2.f41417e7.chunk.js",
-    "static/js/2.f41417e7.chunk.js.map": "/goit-react-hw-03-phonebook-modal/static/js/2.f41417e7.chunk.js.map",
+    "static/js/2.bab4be6d.chunk.js": "/goit-react-hw-03-phonebook-modal/static/js/2.bab4be6d.chunk.js",
+    "static/js/2.bab4be6d.chunk.js.map": "/goit-react-hw-03-phonebook-modal/static/js/2.bab4be6d.chunk.js.map",
     "index.html": "/goit-react-hw-03-phonebook-modal/index.html",
-    "static/css/main.7b18a000.chunk.css.map": "/goit-react-hw-03-phonebook-modal/static/css/main.7b18a000.chunk.css.map",
-    "static/js/2.f41417e7.chunk.js.LICENSE.txt": "/goit-react-hw-03-phonebook-modal/static/js/2.f41417e7.chunk.js.LICENSE.txt"
+    "static/css/main.4b514f15.chunk.css.map": "/goit-react-hw-03-phonebook-modal/static/css/main.4b514f15.chunk.css.map",
+    "static/js/2.bab4be6d.chunk.js.LICENSE.txt": "/goit-react-hw-03-phonebook-modal/static/js/2.bab4be6d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a0dbe663.js",
-    "static/js/2.f41417e7.chunk.js",
-    "static/css/main.7b18a000.chunk.css",
-    "static/js/main.53e3d874.chunk.js"
+    "static/js/2.bab4be6d.chunk.js",
+    "static/css/main.4b514f15.chunk.css",
+    "static/js/main.ece350af.chunk.js"
   ]
 }
